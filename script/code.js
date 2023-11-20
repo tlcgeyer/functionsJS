@@ -23,36 +23,36 @@
     }
     return data 
 }*/
-function person(firstName, lastName, age, hrs, rate) {
-    return {
-        /*name: firstName,
-        surname: lastName,
-        userAge: age,
-        hrsWorked: hrs,
-        userRate: rate, */ firstName, lastName, age, hrs, rate // to shorten it 
-    } 
-}
-let person1 = person('Peter', 'Mukanya', 3, 60, 500)
-let person2 = person('John', 'Mukanya', 1, 20, 350)
-console.log(person1);
-console.log(person2); //when to use a factory function? when u make a verification code 
+// function person(firstName, lastName, age, hrs, rate) {
+//     return {
+//         /*name: firstName,
+//         surname: lastName,
+//         userAge: age,
+//         hrsWorked: hrs,
+//         userRate: rate, */ firstName, lastName, age, hrs, rate // to shorten it 
+//     } 
+// }
+// let person1 = person('Peter', 'Mukanya', 3, 60, 500)
+// let person2 = person('John', 'Mukanya', 1, 20, 350)
+// console.log(person1);
+// console.log(person2); //when to use a factory function? when u make a verification code 
 
-/*Constructor function: allows us to create an object. Then return 'this' object. --The first letter is uppercase only in constructor
-functions and class. Only in the constructor function do we need tp make use of ' new keyword'. */
-function Laptop(make, amount) {
-    this.make = make
-    this.amount = amount // equal sign means assigning a value 
-    return this  
-}
-function Smartphone(amount) {
-    this.amount = amount 
-}
-let laptop1 = new Laptop('HP', 18000)
-let laptop2 = new Laptop('Dell', 20000)
-let samsungA51 = new SmartPhone(20000)
-console.log(laptop1);
-console.log(laptop2);
-console.log(laptop2 instanceof SmartPhone /*to check if the related/dna */); /*to check the data type would be 'typeof */
+// /*Constructor function: allows us to create an object. Then return 'this' object. --The first letter is uppercase only in constructor
+// functions and class. Only in the constructor function do we need tp make use of ' new keyword'. */
+// function Laptop(make, amount) {
+//     this.make = make
+//     this.amount = amount // equal sign means assigning a value 
+//     return this  
+// }
+// function Smartphone(amount) {
+//     this.amount = amount 
+// }
+// let laptop1 = new Laptop('HP', 18000)
+// let laptop2 = new Laptop('Dell', 20000)
+// let samsungA51 = new SmartPhone(20000)
+// console.log(laptop1);
+// console.log(laptop2);
+// console.log(laptop2 instanceof SmartPhone /*to check if the related/dna */); /*to check the data type would be 'typeof */
 
 //Anonymous function: a function without a name. 
 //(function () {
@@ -97,3 +97,53 @@ repeat(10)*/
 display()
 console.log(`Outside a function ${numb1}`); */
 
+//Constructor property : returns a reference to the constructor function that created the instance object.
+// function NewRecord(name) {
+//     this.name = name 
+// }
+// let person1 = new NewRecord('Leigh');
+// let person2 = {name : 'San'}
+// //console.log(person2);
+// //can also check if its an instanceof that particular property / another alt method for instanceof
+// console.log(person1.constructor === NewRecord); //True
+
+// //It is the same as using instanceOf
+// console.log(person1 instanceof NewRecord); //True 
+
+// //Functions are objects: -----------> anything inside js is an object
+// let person = {
+//     firstName: 'Leigh',
+//     lastName: 'San',
+//     fullName: function() {
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
+// console.log(person);
+// console.log(fullName); 
+
+//when you don't want to display a value in a console but just display the persons salary or one specific thing
+// let person = {
+//     firstName: 'Leigh',
+//     lastName: 'San',
+//     hrs: '120',
+//     rate: 500, 
+//     salary : function() {
+//         return this.hrs * this.rate
+//     }
+// }
+// console.log(person.salary())
+// person.salary()
+
+/*function addition () {
+    let numb1 = document.getElementById(`numb1`).value
+    let numb2 = document.getElementById(`numb2`).value
+    //--to get the value to the input element 
+    //to wrap everything together add .value
+    let sum = numb1 + numb2
+    //lblOutput.innerHTML = `<strong>$ {sum}</strong>`
+    lblOutput.textContent = sum
+}*/
+//let numb1 = (8,7,2)
+//console.log(numb1);----it will display the last number which is 2
+
+//built-in functions 
