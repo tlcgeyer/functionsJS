@@ -147,3 +147,6 @@ console.log(`Outside a function ${numb1}`); */
 //console.log(numb1);----it will display the last number which is 2
 
 //built-in functions 
+
+
+
