@@ -150,3 +150,116 @@ console.log(`Outside a function ${numb1}`); */
 
 
 
+/*Math methods : allows us to modify*/
+// let numbers = [2, 4, 11, 1]
+// let a = 3
+// let b = 2
+// console.log(`Highest number: ${Math.max(...numbers)}`); //... is the spread operator 
+// console.log(`Lowest number: ${Math.min(...numbers)}`);
+// // 3^2 = 3 * 3
+// console.log(`pow(x,y): ${Math.pow(a, b)}`);
+// console.dir(Math);
+// //continuing..........
+// let numbers = [9, 4, 2, 5, 10]
+
+// function highestNumber(arguments) {   // rest operator allows you create a function that supports man arguments
+//     for(let number in arguments) {   //for 'of' will display the elements whereas  for 'in' will the index
+//         console.log(number);
+//     }
+// }
+// highestNumber(numbers)
+
+//longer method: 
+// function highest(args) {
+//     let x = args[0];
+//     for(let m in args) {
+//         if(args[m]>x) {
+//             x=args[m]
+//         }
+//         //console.log(m);
+//     }
+//     console.log(x)
+// }
+// highest(numbers)
+
+// //shorter method
+// //numbers called a spread operator(...)
+// console.log(Math.max(...numbers));
+
+// Math.round() //is gonna round it off to the nearest integer
+//Strings
+// let firstName = 'Tamlin'
+// console.log(firstName.split("").reverse().join(""));
+
+
+/*
+Exercises on the below methods
+- charAt()
+- endsWith()
+- includes()
+- lastIndexOf()
+- indexOf()
+- replace()
+- repeat()
+- startWith()
+- subString()
+- trim()
+- trimEnd()
+- trimStart()
+- slice()
+- split() */
+
+// let rIdx = Math.floor(Math.random() * (numbers.length -1))
+// console.log(numbers);
+// console.log(rIdx);
+// console.log(numbers[rIdx]);
+
+//Math method: PI 
+// //PI is a constant and in math is specifically used to calculate the area of a circle. 
+// console.log(Math.PI);
+
+// //Round the value to the nearest integer
+// console.log("round(3.5));
+// //Want to return the highest number
+// let numbers = [9, 4, 20, 2, 5, 10, 9]
+// let data = [11, 39]
+// console.log(Math.max(9, 11, 15, 20, 7));
+// console.log(Math.max(...numbers)); //specific the spread operator with a loop to define which is the highest 
+
+
+// Template Literals/Date 
+// let currentDate = new Date();
+// console.log(currentDate);
+
+// //to get the current date: 
+// console.log(currentDate.getDate());
+
+// //to get the current year: 
+// console.log(currentDate.getUTCFullYear());
+
+// //to get the year(another alt method):
+// console.log(currentDate.getFullYear());
+
+// //to get the current month: 
+// console.log(currentDate.getMonth() + 1);
+
+
+// //specifying a date with a string: 
+// let anotherDate = new Date("2022-11-5")
+// console.log(anotherDate);
+
+//specifying the date is a integer: 
+// let thirdAttempt = new Date(2021, 11, 11)
+// console.log(thirdAttempt);
+
+//to display an error
+// console.error("This is an error");
+
+
+//Built-in functions: 
+// console.log(isFinite("4")); //checking if its a string
+// console.log(isFinite(4)); //checking if its a number 
+// console.log(isNaN(8)); //displays that its not a number and undefined 
+// console.log(eval("8+6")); //it will add up the numbers 
+// console.log(parseInt(89.5)); //converts the value of a string to a integer or number
+// console.log(parseFloat("89")); //converts a string to a floating point 
