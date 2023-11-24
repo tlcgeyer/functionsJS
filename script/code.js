@@ -38,7 +38,7 @@
 // console.log(person2); //when to use a factory function? when u make a verification code 
 
 // /*Constructor function: allows us to create an object. Then return 'this' object. --The first letter is uppercase only in constructor
-// functions and class. Only in the constructor function do we need tp make use of ' new keyword'. */
+// functions and class. Only in the constructor function do we need to make use of ' new keyword'. */
 // function Laptop(make, amount) {
 //     this.make = make
 //     this.amount = amount // equal sign means assigning a value 
@@ -263,3 +263,5 @@ Exercises on the below methods
 // console.log(eval("8+6")); //it will add up the numbers 
 // console.log(parseInt(89.5)); //converts the value of a string to a integer or number
 // console.log(parseFloat("89")); //converts a string to a floating point 
+
+array.indexOf(1, 2);
